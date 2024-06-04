@@ -3,7 +3,6 @@ package festivos.festivos.aplicacion;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -142,11 +141,11 @@ public class FestivosServicio implements IFestivosServicio {
     @SuppressWarnings("deprecation")
     public void diasPuentes(int año) {
         Tipos tipo = new Tipos(1, "Fijo");
-        Date fecha = new Date(año + 1900, 01, 01);
+        Date fecha = new Date(año + 1900, 1, 1);
         Festivos festivos1 = new Festivos(fecha.getDay(), 0, 0, fecha.getMonth(), "Año nuevo", tipo);
         modificar(festivos1.getNombre(), festivos1);
         
-        fecha = new Date(año + 1900, 5, 01);
+        fecha = new Date(año + 1900, 5, 1);
         festivos1 = new Festivos(fecha.getDay(), 0, 0, fecha.getMonth(), "Día del Trabajo", tipo);
         modificar(festivos1.getNombre(), festivos1);
 

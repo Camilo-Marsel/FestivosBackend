@@ -1,6 +1,5 @@
 package festivos.festivos.core.entidades;
 
-import java.util.Optional;
 
 import org.hibernate.annotations.GenericGenerator;
 

@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FestivosApplication<festivos>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "festivos.festivos.FestivosApplication",
+            "projectName": "festivos",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

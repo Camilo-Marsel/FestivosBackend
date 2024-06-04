@@ -22,6 +22,7 @@ public class FestivosControlador {
 
     @RequestMapping(value = "/fecha/{año}/{mes}/{dia}", method = RequestMethod.GET)
     public String obtener(@PathVariable Integer año, @PathVariable Integer mes, @PathVariable Integer dia) {
+        servicio.agregar(año);
         if (dia > 31 || mes > 12 || mes < 1 || dia < 1){
             return "Fecha No valida";
         }else{
